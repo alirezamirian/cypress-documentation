@@ -1164,7 +1164,8 @@ Without a single explicit assertion, there are dozens of ways this test can
 fail! Here's a few:
 
 - The initial [`cy.visit()`](/api/commands/visit) could respond with something
-  other than success. Or, the mounted component may be incorrectly imported.
+  other than success.
+- The mounted component could be incorrectly imported into the spec file.
 - Any of the [`cy.get()`](/api/commands/get) commands could fail to find their
   elements in the DOM.
 - The element we want to [`.click()`](/api/commands/click) on could be covered
